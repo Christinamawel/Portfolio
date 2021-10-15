@@ -1,3 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
 .project-img {
-  max-width: 30em;;
+  max-width: 20em;
+}
+
+@media (max-width: 800px) {
+#hero-mobile {
+  width: 100vw;
+  margin-top: 5em;
+  background-color:rgb(214, 140, 118);
+  padding: 1.5em;
+  box-sizing:border-box;
+  text-align: center;
+}
+
+#hero-mobile img {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+  border: .3em double rgb(41, 41, 41);
+}
+
+nav ul {
+  list-style-type: none;
+  width: 100%;
+  background-color: rgba(19, 19, 19, 0.8);
+  padding: 1em;
+  display: flex;
+  flex-flow: row wrap;
+  color:rgb(214, 140, 118);
+  position: fixed;
+  margin-top: -5em;
+}
+
+nav li {
+  padding: .25em;
+}
+
+nav a {
+  text-decoration: none;
+  color:rgb(214, 140, 118);
+  padding: .3em;
+}
+
+nav a:hover {
+  border: .1em solid rgb(214, 140, 118);
+}
+}
+
+@media (min-width: 800px) {
+nav {
+  display: none;
+}
 }
