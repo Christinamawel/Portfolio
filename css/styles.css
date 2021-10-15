@@ -2,10 +2,16 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: rgb(231, 231, 231);
 }
 
-.project-img {
-  max-width: 20em;
+.heading {
+  color: rgba(19, 19, 19, 0.9);
+}
+
+a {
+  text-decoration: none;
 }
 
 @media (max-width: 800px) {
@@ -14,7 +20,7 @@ body {
   margin-top: 5em;
   background-color:rgb(214, 140, 118);
   padding: 1.5em;
-  box-sizing:border-box;
+  box-sizing: border-box;
   text-align: center;
 }
 
@@ -23,12 +29,13 @@ body {
   display: block;
   margin: 0 auto;
   border: .3em double rgb(41, 41, 41);
+  border-radius: .5em;
 }
 
 nav ul {
   list-style-type: none;
   width: 100%;
-  background-color: rgba(19, 19, 19, 0.8);
+  background-color: rgba(19, 19, 19, 0.85);
   padding: 1em;
   display: flex;
   flex-flow: row wrap;
@@ -56,4 +63,64 @@ nav a:hover {
 nav {
   display: none;
 }
+}
+
+#projects ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#projects li {
+  color:rgba(19, 19, 19, 0.9);
+  width: 40%;
+  padding: 1em;
+}
+
+#projects a {
+  text-decoration: none;
+  color:rgba(19, 19, 19, 0.9);
+}
+
+#projects li:hover {
+  border:.05em solid rgba(19, 19, 19, 0.9);
+}
+
+.project-img {
+  max-width: 90%;
+}
+
+.full-size-img {
+  max-width: 100%;
+}
+
+#about {
+  background-color:rgba(19, 19, 19, 0.9);
+  color: rgb(231, 231, 231);
+  padding: 1em;
+}
+
+#about h3 {
+  color:rgb(235, 158, 134);
+}
+
+#about h4 {
+  color:rgb(235, 158, 134);
+}
+
+#about span {
+  padding: .5em;
+  font-weight: bold;
+  color:rgb(235, 158, 134)
+}
+
+#contact {
+  color:rgb(170, 79, 51);
+  padding: 1em;
+  font-size: 1.5em;
+}
+
+#contact img {
+  max-width: 2em;
+  padding-right: 1em;
 }
