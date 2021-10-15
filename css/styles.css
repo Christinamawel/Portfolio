@@ -10,9 +10,15 @@ body {
   color: rgba(19, 19, 19, 0.9);
 }
 
+#head {
+ padding-top: 1em;
+}
+
 a {
   text-decoration: none;
 }
+
+/*-----Mobile view-------*/
 
 @media (max-width: 900px) {
 #hero-mobile {
@@ -69,6 +75,8 @@ nav a:hover {
 }
 }
 
+/*-----fix for small nav space-------*/
+
 @media (max-width:450px) {
   #hero-mobile{
     margin-top: 6em;
@@ -79,9 +87,15 @@ nav a:hover {
   }
   }
 
+/*-----desktop view-------*/
+
 @media (min-width: 900px) {
 nav {
   display: none;
+}
+
+#heading {
+  font-size: 50rem;
 }
 
 #hero-img {
@@ -99,13 +113,15 @@ nav {
 }
 
 #projects li {
-width: 20%;
+  width: 25%;
 }
 
 .photoshop {
   max-height: 12em;
 }
 }
+
+/*-----under hero styles for all viewport sizes-------*/
 
 #projects h3 {
   color:rgb(41, 41, 41);
@@ -117,13 +133,16 @@ width: 20%;
   list-style-type: none;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 #projects li {
   color:rgba(19, 19, 19, 0.9);
   padding: 1em;
   box-sizing: border-box;
+  background-color:rgb(255, 255, 255);
+  margin: 1em;
+  font-size: 1.3rem;
 }
 
 #projects a {
@@ -138,15 +157,8 @@ width: 20%;
 
 .project-img {
   max-width: 90%;
-}
-
-.photoshop {
   display: block;
   margin: 0 auto;
-}
-
-.full-size-img {
-  max-width: 100%;
 }
 
 #about {
@@ -179,4 +191,29 @@ width: 20%;
 #contact img {
   max-width: 2em;
   padding-right: 1em;
+}
+
+/*image pages styleing*/
+
+.full-size-img {
+  max-width: 100%;
+}
+
+.img-page-link {
+  color:rgb(41, 41, 41);
+  background-color:rgb(214, 140, 118);
+  display: block;
+  padding: 1em;
+  width: 9.5em;
+  margin: 1em .5em;
+  border-radius: .5em;
+}
+
+.img-page-link img {
+  max-width: 1em;
+  padding-left: 1em;
+}
+
+.img-page-link:hover {
+  color:white;
 }
