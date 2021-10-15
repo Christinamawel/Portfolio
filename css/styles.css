@@ -23,7 +23,8 @@ a {
 @media (max-width: 900px) {
 #hero-mobile {
   width: 100vw;
-  background-color:rgb(214, 140, 118);
+  background: url("https://images.unsplash.com/photo-1547496832-84e64458210a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=987&q=80");
+  background-size:cover;
   padding: 2em;
   box-sizing: border-box;
   text-align: center;
@@ -37,6 +38,12 @@ a {
   display: block;
   margin: 0 auto;
   border: .3em double rgb(41, 41, 41);
+  border-radius: .5em;
+}
+
+#hero-desktop {
+  background-color: rgba(247, 247, 247, .5);
+  padding-bottom: 1em;
   border-radius: .5em;
 }
 
@@ -67,7 +74,7 @@ nav a:hover {
 }
 
 #projects li {
-  width: 40%;
+  max-width: 20em;
 }
 
 .photoshop {
@@ -87,28 +94,35 @@ nav a:hover {
   }
   }
 
-/*-----desktop view-------*/
+/*-----small desktop/tablet view-------*/
 
 @media (min-width: 900px) {
 nav {
   display: none;
 }
 
-#heading {
-  font-size: 50rem;
+#head {
+  font-size: 3.5rem;
+  text-decoration: underline;
+}
+
+#sub-head {
+  font-size: 2rem;
+  max-width: 450px;
 }
 
 #hero-img {
   float: right;
-  height: 100vh;
+  height: 80vh;
   border-left:rgb(41, 41, 41) double 1em;
 }
 
 #hero-desktop {
-  height: 100vh;
-  padding-top: 42vh;
+  height: 80vh;
+  padding-top: 15vh;
   padding-left: 1em;
-  background-image: linear-gradient( rgb(241, 177, 157),rgb(214, 140, 118), rgb(148, 93, 76));
+  background: url("https://images.unsplash.com/photo-1547496832-84e64458210a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=987&q=80");
+  background-size:cover;
   box-sizing: border-box;
 }
 
@@ -118,6 +132,36 @@ nav {
 
 .photoshop {
   max-height: 12em;
+}
+}
+
+/*-----large desktop view-------*/
+
+@media (min-width: 1390px) {
+.heading {
+  padding-left: 3rem;
+}
+
+#head {
+  font-size: 6rem;
+}
+
+#sub-head {
+  font-size: 4rem;
+  max-width: 900px;
+  padding-left: 1.5em;
+}
+
+#hero-desktop {
+  padding-top: 8vh;
+}
+
+#hero-img {
+  height: 100vh;
+}
+
+#hero-desktop {
+  height: 100vh;
 }
 }
 
@@ -138,11 +182,13 @@ nav {
 
 #projects li {
   color:rgba(19, 19, 19, 0.9);
-  padding: 1em;
+  padding: .5em;
   box-sizing: border-box;
   background-color:rgb(255, 255, 255);
   margin: 1em;
-  font-size: 1.3rem;
+  font-size: 1.5em;
+  text-align: center;
+  border-radius: .5em;
 }
 
 #projects a {
@@ -151,7 +197,7 @@ nav {
 }
 
 #projects li:hover {
-  background-color:rgb(214, 140, 118);
+  background-color:rgb(247,148,142);
   color:rgba(19, 19, 19, 0.9);
 }
 
@@ -164,7 +210,7 @@ nav {
 #about {
   background-color:rgba(19, 19, 19, 0.9);
   color: rgb(231, 231, 231);
-  padding: 1em;
+  padding: 2.5em;
   margin-top: 5em;
 }
 
