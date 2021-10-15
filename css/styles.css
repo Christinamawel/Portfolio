@@ -17,13 +17,13 @@ a {
 @media (max-width: 900px) {
 #hero-mobile {
   width: 100vw;
-  margin-top: 5em;
   background-color:rgb(214, 140, 118);
   padding: 2em;
   box-sizing: border-box;
   text-align: center;
   border-top: .5em double rgb(41, 41, 41);
   border-bottom: .5em double rgb(41, 41, 41);
+  margin-top: 4em;
 }
 
 #hero-mobile img {
@@ -43,7 +43,7 @@ nav ul {
   flex-flow: row wrap;
   color:rgb(214, 140, 118);
   position: fixed;
-  margin-top: -5em;
+  margin-top: -4em;
 }
 
 nav li {
@@ -63,7 +63,21 @@ nav a:hover {
 #projects li {
   width: 40%;
 }
+
+.photoshop {
+  max-height: 6em;
 }
+}
+
+@media (max-width:450px) {
+  #hero-mobile{
+    margin-top: 6em;
+  }
+   
+  nav ul {
+    margin-top: -6em
+  }
+  }
 
 @media (min-width: 900px) {
 nav {
@@ -86,6 +100,10 @@ nav {
 
 #projects li {
 width: 20%;
+}
+
+.photoshop {
+  max-height: 12em;
 }
 }
 
@@ -122,6 +140,11 @@ width: 20%;
   max-width: 90%;
 }
 
+.photoshop {
+  display: block;
+  margin: 0 auto;
+}
+
 .full-size-img {
   max-width: 100%;
 }
@@ -130,6 +153,7 @@ width: 20%;
   background-color:rgba(19, 19, 19, 0.9);
   color: rgb(231, 231, 231);
   padding: 1em;
+  margin-top: 5em;
 }
 
 #about h3 {
